@@ -1,8 +1,10 @@
+import HomeLayout from "@/components/layouts/HomeLayout";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <HomeLayout>
+      <h1>GSAP</h1>
+    </HomeLayout>
   );
 };
 
