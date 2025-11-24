@@ -11,7 +11,7 @@ const DocumentationLayout = ({ children }: { children: ReactNode }) => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/gsap/basic"> Basic</Link>
+              <Link to="/fundamental"> Fundamental</Link>
             </li>
             <li>
               <Link to="/plugins"> Plugins</Link>

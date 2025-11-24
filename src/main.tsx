@@ -89,6 +89,7 @@ G.CustomWiggle = CustomWiggle;
 import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router";
 
+import EasingIndex from "./pages/fundamental/easing/Index";
 import Documentation from "./pages/Documentation";
 import FeaturesToolsIndex from "./pages/features-tools/Index";
 import Basic from "./pages/fundamental/basic/Basic";
@@ -407,12 +408,15 @@ import UtilsWrapYoyo from "./pages/features-tools/utility-methods/wrapYoyo";
 import ScrollToConfig from "./pages/plugins/scrollto/config";
 import TextPluginIndex from "./pages/plugins/text/index";
 import PluginsIndex from "./pages/plugins/Index";
+import FundamentalIndex from "./pages/fundamental/Index";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/fundamental/easing" element={<EasingIndex />} />
+        <Route path="/fundamental" element={<FundamentalIndex />} />
         <Route path="/documentation" element={<Documentation />} />
         <Route path="/features-tools" element={<FeaturesToolsIndex />} />
         <Route path="/fundamental/basic" element={<Basic />} />
